@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+    <head>
+        <title>JS Final Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="GSCookie.css">
+    </head>
+    
+    <body>
+        <header>
+            <div id="wrapper" class="clearfix">
+            <h1>Girl Scout Cookie Order Form</h1>
+            </div>
+        </header>
+        <main>
+        <article>
+<form>
+            <fieldset id="accountInfo">
+            <legend>Account Information</legend>
+    <br>
+            
+            <label for="fname">First Name:</label>
+            <input type="text" name="acctfname">
+      <br><br><!-- consider adding the space with CSS in the future  -->
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="acctlfname">
+      <br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" name="acctaddress">
+      <br><br>
+
+                <label for="city">City:</label><!-- From W3Schools: The for attribute of the <label> tag should be equal to the id attribute of the related element to bind them together.  -->
+      <input type="text" name="acctcity">
+      <br><br>
+
+      <label for="state">State:</label>
+      <input type="text" name="acctstate" textarea maxlength="2" size="2">
+      <br><br>
+
+      <label for="zip">Zip:</label>
+      <input type="text" name="acctzip" textarea maxlength="5" size="5">
+      <br>
+      <br>
+      <input type="radio" name="billing" id="shippingtoo" onclick="fillShipping(this.form)">
+      <em>Same as Shipping</em>&nbsp; <!-- for italics, consider using CSS -->
+      <input type="radio" onclick="clearFields(shippingInfo)" value="Clear" name="billing" id="diffshipping"><em>Enter different shipping address</em>
+  </fieldset>
+  <P>
+    <fieldset id="shippingInfo">
+      <legend>Shipping Information</legend>
+      <br>
+      <label for="address">Address:</label>
+      <input type="text" id="shipaddr" name="shippingaddress" class="shipping">
+      <br><br>
+
+      <label for="city">City:</label>
+      <input type="text" id="shipcity" name="shippingcity" class="shipping">
+      <br><br>
+
+      <label for="state">State:</label>
+      <input type="text" id="shipstate" name="shippingstate" class="shipping" textarea maxlength="2" size="2">
+      <br><br>
+
+      <label for="zip">Zip:</label>
+      <input type="text" id="shipzip" name="shippingzip" class="shipping" textarea maxlength="5" size="5">
+    </fieldset>
+    <!-- cookie order section -->
+
+      <fieldset id="cookieInfo">
+        <legend>Cookies</legend>
+        <p>Please select the cookie name and quantity you would like to order. Cookies are $3.50 per box.</p>
+        
+          <label for="thinmints">Thin Mints:</label>
+          <input onblur="findTotal()" type="text" name="qty" class="qty" id="thinmints" size="2" />
+          <br>
+          <br>
+          <label for="dosidos">Do Si Do's:</label>
+          <input onblur="findTotal()" type="text" name="qty" class="qty" id="dosidos" size="2" />
+          <br>
+          <br>
+          <label for="lemoncremes">Lemon Cremes:</label>
+          <input onblur="findTotal()" type="text" name="qty" class="qty" id="lemoncremes" size="2" />
+          <br>
+          <br>
+          <label for="sanddollars">Sand Dollars:</label>
+          <input onblur="findTotal()" type="text" name="qty" class="qty" id="sanddollars" size="2" />
+          <br>
+          <br>
+          <label for="chocolatechip">Chocolate Chip:</label>
+          <input onblur="findTotal()" type="text" name="qty" class="qty" id="chocolatechip" size="2" />
+          <br>
+          <br>
+          <label for="total"><b>Total:</b></label>
+          <input type="text" name="total" id="total" class="cookie" size="2" />
+      </fieldset>
+      <button id="pBtn"><a href="#cookieSummary">Preview Order</a></button>
+      </article>
+       <section>
+            <div id="cookieSummary">
+            <h2>Order Information</h2>
+                <div>
+                    <ul id="order"></ul>
+                </div>
+            <div id="deliverTo"></div>
+                <p id="order"></p>
+                <p id="sub"></p>
+                <p id="ship"></p>
+                <p id="tot"></p>
+                </section>
+        </main>
+                <script src="GSCookie.js"></script>
+ </body>
+</html>
+
+
+
+
+     
+
+ 
+
+     

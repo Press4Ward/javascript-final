@@ -1,0 +1,107 @@
+/* JavaScript Final Project 
+Author: Terry Wells
+Date: 11/28/2017
+*/
+
+
+ol, ul {
+   list-style: none;
+}
+
+img.center{
+    text-align:center;
+    margin: 0 auto;
+    padding:0px;
+}
+
+header{
+  /*background: #009447; /*girl scout green */
+/* text-align: center;
+ line-height: 5em;
+  padding: .2px .2px .2px .2px; 
+  border-bottom: 1px #ff9933; */ /* girl scout light orange */
+
+  
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+  line-height:100%;
+  width: auto;
+  color: #009447; /*girl scout green*/
+  font-size: 38px; 
+}
+
+legend {
+  position: relative;
+  font-size: 16pt;
+  color: #00008b; /* girl scout blue */
+   font-weight: bold;
+  border-color: #00008b;
+}
+
+form {
+  padding: 6px;
+    width: 66.6667%;
+  float: inherit;
+}
+
+fieldset {
+  position: left;
+  margin-bottom: 10px;
+  padding: 1.5em 1em 0.5em 1em;
+  background-color: #d1c1b2; /* Girl Scout Cadet light brown */
+}
+
+article {
+  width: 960px;
+  text-align: left;
+  background: #ff9933; /* girl scout light orange */
+  padding:20px;
+  padding-left: 15px;
+  padding-top: 10px;
+  border-style: inset;
+    border-color: #009447;
+  border-width: medium;
+}
+
+fieldset input[type="button"] {
+    display: block;
+    margin: 0 auto;
+  color: #009447;
+}
+
+input, text area{
+  font-size: 1em;
+}
+
+cookieSummary {
+  float: left;
+    min-height: 100px;
+  width: 33.3333%;
+  background-color: #4CB47E; /* lighter hex of girl scout green */
+  border-width: medium;
+  border-style: solid;
+  clear: both;
+  border: 1px solid;
+  margin-top: .1em;
+}
+
+cookieSummary h2 {
+  width: 100%;
+}
+
+cookieSummary div{
+  margin-left; 20px;
+  display: none;
+  padding: 10px;
+}
+
+cookieSummary div p span {
+  font-weight: bold;
+}
+
+cookieSummary li {
+  list-style-type: none;
+  margin-left: 20px;
+}
